@@ -1,0 +1,32 @@
+[project]
+name = "fast-pzero"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ana Lu",email = "ana.lima@maisinternet.net"}
+]
+readme = "README.md"
+requires-python = "~=3.12.0"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)"
+]
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ['migrations']
+
+[tool.ruff.lint]
+preview = true 
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.4"
+
