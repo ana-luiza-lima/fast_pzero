@@ -1,0 +1,3 @@
+fast_zero = fast_pzero
+
+Para inicializar o ambiente virtual: poetry shell
